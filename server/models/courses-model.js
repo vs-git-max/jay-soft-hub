@@ -32,6 +32,12 @@ const coursesSchema = new mongoose.Schema(
       min: 1,
       max: 5,
     },
+    enrolledStudents: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
   },
   { timestamps: true }
 );

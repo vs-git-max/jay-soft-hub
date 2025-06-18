@@ -1,0 +1,34 @@
+import mongoose from "mongoose";
+
+const tutorsSchema = new mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    passkey: {
+      type: String,
+      required: true,
+    },
+    contact: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    image: {
+      type: String,
+      required: true,
+    },
+  },
+  { timestamps: true }
+);
+
+const Tutor = mongoose.model.Tutors || mongoose.model("Tutor", tutorsSchema);
+
+export default Tutor;
