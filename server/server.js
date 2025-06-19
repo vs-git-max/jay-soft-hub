@@ -8,6 +8,7 @@ import cors from "cors";
 import connectDB from "./database/db.js";
 import authRoutes from "./routes/auth.routes.js";
 import coursesRoutes from "./routes/courses.routes.js";
+import tutorAuthRoutes from "./routes/tutor-auth.routes.js";
 
 //creating the app
 const app = express();
@@ -28,6 +29,7 @@ app.use(
 //using the functions
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/courses", coursesRoutes);
+app.use("/api/v1/auth/tutor", tutorAuthRoutes);
 
 //listening to the app
 app.listen(PORT, async () => {

@@ -7,14 +7,14 @@ const tutorsSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
+    initials: {
+      type: String,
+      required: true,
+    },
     email: {
       type: String,
       required: true,
       unique: true,
-    },
-    passkey: {
-      type: String,
-      required: true,
     },
     contact: {
       type: String,
@@ -22,6 +22,10 @@ const tutorsSchema = new mongoose.Schema(
       unique: true,
     },
     image: {
+      type: String,
+      required: true,
+    },
+    password: {
       type: String,
       required: true,
     },
