@@ -33,6 +33,13 @@ const tutorsSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+tutorsSchema.set("toJSON", {
+  transform: function (doc, ret) {
+    delete ret.password;
+    return ret;
+  },
+});
+
 const Tutor = mongoose.model.Tutors || mongoose.model("Tutor", tutorsSchema);
 
 export default Tutor;
