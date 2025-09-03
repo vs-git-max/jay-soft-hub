@@ -38,7 +38,7 @@ const ContactUs = () => {
           For queries feel free to reach out.
         </p>
       </div>
-      <div className="flex w-full justify-between flex-col lg:flex-row-reverse items-center gap-2 lg:gap-5 ">
+      <div className="flex w-full justify-between flex-col-reverse lg:flex-row items-center gap-2 lg:gap-5 ">
         <form
           autoComplete="off"
           onSubmit={onSubmit}
