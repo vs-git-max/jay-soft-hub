@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed flex items-center z-1000   justify-between bg-blue-950  trans top-0 lg:top-1 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-[90%] lg:rounded-full px-4 py-1">
-      <div className="">
+      <div className="mt-3">
         <Logo />
       </div>
       <div className="lg:flex hidden gap-6 ">
