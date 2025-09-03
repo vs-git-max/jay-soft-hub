@@ -38,11 +38,11 @@ const ContactUs = () => {
           For queries feel free to reach out.
         </p>
       </div>
-      <div className="flex w-full justify-between items-center gap-2 lg:gap-5 ">
+      <div className="flex w-full justify-between flex-col lg:flex-row items-center gap-2 lg:gap-5 ">
         <form
           autoComplete="off"
           onSubmit={onSubmit}
-          className="flex flex-col item-center gap-5 flex-1/2"
+          className="flex flex-col item-center gap-5 flex-1 lg:flex-1/2"
         >
           <input
             type="text"
@@ -77,7 +77,7 @@ const ContactUs = () => {
             </button>
           </div>
         </form>
-        <div className="flex-1/2 ">
+        <div className="flex-1 lg:flex-1/2 ">
           <img
             src={contactImg}
             alt="contact image"
