@@ -6,7 +6,7 @@ const CallButton = () => {
 
   return (
     <button
-      onClick={() => navigate("/auth")}
+      onClick={() => navigate("/auth/signup")}
       className="bg-orange-600 px-3 rounded-full text-[16px] font-bold top-0 left-0"
     >
       Signup
