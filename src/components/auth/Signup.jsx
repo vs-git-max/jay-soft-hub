@@ -1,6 +1,7 @@
 import Form from "@/common/Form";
 import { registerFormControls } from "@/helpers";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   const initialFormData = {
@@ -18,7 +19,7 @@ const Signup = () => {
   };
 
   return (
-    <div>
+    <div className="grid place-items-center gap-2">
       <Form
         formControls={registerFormControls}
         formData={formData}
@@ -26,6 +27,12 @@ const Signup = () => {
         buttonText={"Signup"}
         onSubmit={onSubmit}
       />
+      <p className="text-blue-950 font-medium ">
+        Already have an account? Please{" "}
+        <Link className="hover:underline" to={"/auth/login"}>
+          Login
+        </Link>
+      </p>
     </div>
   );
 };

@@ -16,7 +16,7 @@ const Form = ({
         element = (
           <input
             name={getControlItem.name}
-            className="w-96 placeholder:text-blue-950 placeholder:font-bold placeholder:text-lg outline-0 text-lg font-bold text-blue-950 bg-blue-950/10 py-2 px-3 rounded-full"
+            className="w-96 placeholder:text-blue-950 placeholder:font-medium placeholder:text-lg outline-0 text-lg font-bold text-blue-950 bg-blue-950/10 py-1.5 px-2 rounded-full"
             placeholder={getControlItem.placeholder}
             id={getControlItem.name}
             type={getControlItem.type}
@@ -64,7 +64,7 @@ const Form = ({
       <div className="flex flex-col gap-8">
         {formControls.map((item) => (
           <div className="grid gap-2 w-full" key={item.id}>
-            <label className="mb-1 text-blue-950 font-bold text-xl">
+            <label className="mb-1 text-blue-950 font-bold text-lg">
               {item.label}
             </label>
             {renderInputByControlItem(item)}
