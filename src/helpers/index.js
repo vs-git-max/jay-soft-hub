@@ -192,3 +192,42 @@ export const registerFormControls = [
     type: "password",
   },
 ];
+
+export const footerLinks = [
+  {
+    title: "School",
+    links: [
+      { name: "Home", href: "/" },
+      { name: "About Us", href: "/about" },
+      { name: "Admissions", href: "/admissions" },
+      { name: "News & Events", href: "/news" },
+    ],
+  },
+  {
+    title: "Academics",
+    links: [
+      { name: "Courses", href: "/courses" },
+      { name: "Academic Calendar", href: "/calendar" },
+      { name: "Departments", href: "/departments" },
+      { name: "Faculty", href: "/faculty" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { name: "Library", href: "/library" },
+      { name: "Contact Us", href: "/contact" },
+      { name: "FAQs", href: "/faqs" },
+      { name: "Support", href: "/support" },
+    ],
+  },
+  {
+    title: "Follow Us",
+    links: [
+      { name: "Facebook", href: "https://facebook.com", icon: "Facebook" },
+      { name: "Twitter", href: "https://twitter.com", icon: "Twitter" },
+      { name: "Instagram", href: "https://instagram.com", icon: "Instagram" },
+      { name: "LinkedIn", href: "https://linkedin.com", icon: "Linkedin" },
+    ],
+  },
+];
